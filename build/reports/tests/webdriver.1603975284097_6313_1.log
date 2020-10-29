@@ -1,0 +1,338 @@
+[1603975284.232][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 24575
+[1603975284.232][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1603975284.519][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603975282835_6313_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603975282835_6313_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1603975284.520][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603975282835_6313_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1603975284.520][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1603975284.521][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.3fIXWh data:,
+[1603975286.331][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603975286.335][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603975286.359][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.111",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.3fIXWh"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:60830"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "e39b10375c1a92d1cc7d608dd566f1dd"
+}
+[1603975286.559][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1603975286.560][INFO]: Waiting for pending navigations...
+[1603975286.560][INFO]: Done waiting for pending navigations. Status: ok
+[1603975286.665][INFO]: Waiting for pending navigations...
+[1603975286.666][INFO]: Done waiting for pending navigations. Status: ok
+[1603975286.666][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 1462,
+   "y": 1
+}
+[1603975293.660][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975293.660][INFO]: Waiting for pending navigations...
+[1603975293.661][INFO]: Done waiting for pending navigations. Status: ok
+[1603975293.673][INFO]: Waiting for pending navigations...
+[1603975293.674][INFO]: Done waiting for pending navigations. Status: ok
+[1603975293.674][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975293.956][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975293.956][INFO]: Waiting for pending navigations...
+[1603975293.957][INFO]: Done waiting for pending navigations. Status: ok
+[1603975293.961][INFO]: Waiting for pending navigations...
+[1603975293.962][INFO]: Done waiting for pending navigations. Status: ok
+[1603975293.962][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975294.215][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975294.215][INFO]: Waiting for pending navigations...
+[1603975294.216][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.222][INFO]: Waiting for pending navigations...
+[1603975294.223][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.223][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975294.476][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975294.476][INFO]: Waiting for pending navigations...
+[1603975294.477][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.482][INFO]: Waiting for pending navigations...
+[1603975294.483][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.483][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975294.729][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975294.729][INFO]: Waiting for pending navigations...
+[1603975294.730][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.734][INFO]: Waiting for pending navigations...
+[1603975294.734][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.734][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975294.982][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975294.982][INFO]: Waiting for pending navigations...
+[1603975294.983][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.988][INFO]: Waiting for pending navigations...
+[1603975294.989][INFO]: Done waiting for pending navigations. Status: ok
+[1603975294.989][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975295.238][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975295.238][INFO]: Waiting for pending navigations...
+[1603975295.239][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.243][INFO]: Waiting for pending navigations...
+[1603975295.244][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.244][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975295.493][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975295.493][INFO]: Waiting for pending navigations...
+[1603975295.494][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.509][INFO]: Waiting for pending navigations...
+[1603975295.513][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.513][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975295.751][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975295.751][INFO]: Waiting for pending navigations...
+[1603975295.752][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.755][INFO]: Waiting for pending navigations...
+[1603975295.755][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.755][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975295.995][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975295.995][INFO]: Waiting for pending navigations...
+[1603975295.996][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.999][INFO]: Waiting for pending navigations...
+[1603975295.999][INFO]: Done waiting for pending navigations. Status: ok
+[1603975295.999][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975296.244][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975296.244][INFO]: Waiting for pending navigations...
+[1603975296.245][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.249][INFO]: Waiting for pending navigations...
+[1603975296.250][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.250][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975296.497][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975296.501][INFO]: Waiting for pending navigations...
+[1603975296.502][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.506][INFO]: Waiting for pending navigations...
+[1603975296.506][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.507][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975296.758][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975296.758][INFO]: Waiting for pending navigations...
+[1603975296.759][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.764][INFO]: Waiting for pending navigations...
+[1603975296.764][INFO]: Done waiting for pending navigations. Status: ok
+[1603975296.764][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975297.012][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975297.012][INFO]: Waiting for pending navigations...
+[1603975297.013][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.016][INFO]: Waiting for pending navigations...
+[1603975297.017][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.017][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975297.262][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975297.262][INFO]: Waiting for pending navigations...
+[1603975297.263][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.268][INFO]: Waiting for pending navigations...
+[1603975297.269][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.269][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975297.508][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603975297.508][INFO]: Waiting for pending navigations...
+[1603975297.509][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.512][INFO]: Waiting for pending navigations...
+[1603975297.512][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.512][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"}
+  (Session info: chrome=86.0.4240.111)
+[1603975297.845][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1603975297.845][INFO]: Waiting for pending navigations...
+[1603975297.845][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.853][INFO]: Waiting for pending navigations...
+[1603975297.853][INFO]: Done waiting for pending navigations. Status: ok
+[1603975297.853][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE ExecuteScript "\u003Chtml>\u003Chead>\u003C/head>\u003Cbody>\u003C/body>\u003C/html>"
+[1603975297.861][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND Screenshot {
+
+}
+[1603975297.861][INFO]: Waiting for pending navigations...
+[1603975297.862][INFO]: Done waiting for pending navigations. Status: ok
+[1603975298.134][INFO]: Waiting for pending navigations...
+[1603975298.135][INFO]: Done waiting for pending navigations. Status: ok
+[1603975298.135][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABVYAAAKxCAYAAAC43/emAAABGmlDQ1BTa2lhAAAokX2RsUrDUBSGP0sXwaGCg4NDNruoTavVwaWpUtykVahuaRKC2tSQRvQhfAXBl3BycXQXnFwc3J0y+ycZEijxD/eej/+e5Jx7ArV1pFoDglkcDQeWMb64NCjJduYh1VqC5DPd4..."
+[1603975309.190][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] COMMAND Quit {
+
+}
+[1603975309.240][INFO]: [e39b10375c1a92d1cc7d608dd566f1dd] RESPONSE Quit

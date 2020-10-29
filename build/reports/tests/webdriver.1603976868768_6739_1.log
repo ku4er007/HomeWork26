@@ -1,0 +1,195 @@
+[1603976868.883][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 9512
+[1603976868.883][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1603976869.112][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976868312_6739_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976868312_6739_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1603976869.114][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976868312_6739_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1603976869.114][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1603976869.114][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.kQuONc data:,
+[1603976870.177][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603976870.184][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603976870.201][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.111",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.kQuONc"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51809"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "1248321147f729827e00e044e6151ee3"
+}
+[1603976870.244][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1603976870.244][INFO]: Waiting for pending navigations...
+[1603976870.245][INFO]: Done waiting for pending navigations. Status: ok
+[1603976870.349][INFO]: Waiting for pending navigations...
+[1603976870.349][INFO]: Done waiting for pending navigations. Status: ok
+[1603976870.349][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 1462,
+   "y": 1
+}
+[1603976870.357][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND Navigate {
+   "url": "https://www.citrus.ua/"
+}
+[1603976870.357][INFO]: Waiting for pending navigations...
+[1603976870.357][INFO]: Done waiting for pending navigations. Status: ok
+[1603976870.850][INFO]: Waiting for pending navigations...
+[1603976872.804][INFO]: Done waiting for pending navigations. Status: ok
+[1603976872.804][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE Navigate
+[1603976886.810][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976886.813][INFO]: Waiting for pending navigations...
+[1603976886.815][INFO]: Done waiting for pending navigations. Status: ok
+[1603976886.818][INFO]: Waiting for pending navigations...
+[1603976886.818][INFO]: Done waiting for pending navigations. Status: ok
+[1603976886.818][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE ExecuteScript "complete"
+[1603976889.946][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND FindElement {
+   "using": "css selector",
+   "value": "el-icon el-icon-close"
+}
+[1603976889.946][INFO]: Waiting for pending navigations...
+[1603976889.947][INFO]: Done waiting for pending navigations. Status: ok
+[1603976889.953][INFO]: Waiting for pending navigations...
+[1603976889.953][INFO]: Done waiting for pending navigations. Status: ok
+[1603976889.953][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"el-icon el-icon-close"}
+  (Session info: chrome=86.0.4240.111)
+[1603977032.073][INFO]: [1248321147f729827e00e044e6151ee3] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'Смартфоны')]"
+}
+[1603977032.084][INFO]: Waiting for pending navigations...
+[1603977032.086][INFO]: Done waiting for pending navigations. Status: ok
+[1603977032.104][INFO]: Waiting for pending navigations...
+[1603977032.104][INFO]: Done waiting for pending navigations. Status: ok
+[1603977032.104][INFO]: [1248321147f729827e00e044e6151ee3] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "5d9717be-0662-45f9-8e07-e3fafcc40f64"
+}

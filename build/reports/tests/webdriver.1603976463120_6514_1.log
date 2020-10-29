@@ -1,0 +1,358 @@
+[1603976463.309][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 32914
+[1603976463.310][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1603976463.601][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976462528_6514_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976462528_6514_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1603976463.602][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1603976462528_6514_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1603976463.603][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1603976463.603][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.HZ4VVX data:,
+[1603976465.228][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603976465.244][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1603976465.328][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.111",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.HZ4VVX"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:49638"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "0408f60ff4411856f7b09ca45a98bf89"
+}
+[1603976465.422][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1603976465.422][INFO]: Waiting for pending navigations...
+[1603976465.439][INFO]: Done waiting for pending navigations. Status: ok
+[1603976465.545][INFO]: Waiting for pending navigations...
+[1603976465.546][INFO]: Done waiting for pending navigations. Status: ok
+[1603976465.546][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 1462,
+   "y": 1
+}
+[1603976465.559][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND Navigate {
+   "url": "https://www.citrus.ua/"
+}
+[1603976465.559][INFO]: Waiting for pending navigations...
+[1603976465.560][INFO]: Done waiting for pending navigations. Status: ok
+[1603976465.838][INFO]: Waiting for pending navigations...
+[1603976469.934][INFO]: Done waiting for pending navigations. Status: ok
+[1603976469.934][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE Navigate
+[1603976473.523][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976473.527][INFO]: Waiting for pending navigations...
+[1603976473.528][INFO]: Done waiting for pending navigations. Status: ok
+[1603976473.529][INFO]: Waiting for pending navigations...
+[1603976473.530][INFO]: Done waiting for pending navigations. Status: ok
+[1603976473.530][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976474.041][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976474.041][INFO]: Waiting for pending navigations...
+[1603976474.042][INFO]: Done waiting for pending navigations. Status: ok
+[1603976474.043][INFO]: Waiting for pending navigations...
+[1603976474.043][INFO]: Done waiting for pending navigations. Status: ok
+[1603976474.043][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976474.559][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976474.559][INFO]: Waiting for pending navigations...
+[1603976474.560][INFO]: Done waiting for pending navigations. Status: ok
+[1603976474.561][INFO]: Waiting for pending navigations...
+[1603976474.561][INFO]: Done waiting for pending navigations. Status: ok
+[1603976474.561][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976475.077][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976475.077][INFO]: Waiting for pending navigations...
+[1603976475.078][INFO]: Done waiting for pending navigations. Status: ok
+[1603976475.079][INFO]: Waiting for pending navigations...
+[1603976475.079][INFO]: Done waiting for pending navigations. Status: ok
+[1603976475.079][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976475.595][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976475.595][INFO]: Waiting for pending navigations...
+[1603976475.595][INFO]: Done waiting for pending navigations. Status: ok
+[1603976475.596][INFO]: Waiting for pending navigations...
+[1603976475.596][INFO]: Done waiting for pending navigations. Status: ok
+[1603976475.596][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976476.112][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976476.112][INFO]: Waiting for pending navigations...
+[1603976476.113][INFO]: Done waiting for pending navigations. Status: ok
+[1603976476.114][INFO]: Waiting for pending navigations...
+[1603976476.114][INFO]: Done waiting for pending navigations. Status: ok
+[1603976476.114][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976476.628][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976476.628][INFO]: Waiting for pending navigations...
+[1603976476.628][INFO]: Done waiting for pending navigations. Status: ok
+[1603976476.629][INFO]: Waiting for pending navigations...
+[1603976476.629][INFO]: Done waiting for pending navigations. Status: ok
+[1603976476.629][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976477.142][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976477.142][INFO]: Waiting for pending navigations...
+[1603976477.143][INFO]: Done waiting for pending navigations. Status: ok
+[1603976477.144][INFO]: Waiting for pending navigations...
+[1603976477.144][INFO]: Done waiting for pending navigations. Status: ok
+[1603976477.144][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976477.656][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976477.656][INFO]: Waiting for pending navigations...
+[1603976477.657][INFO]: Done waiting for pending navigations. Status: ok
+[1603976477.658][INFO]: Waiting for pending navigations...
+[1603976477.658][INFO]: Done waiting for pending navigations. Status: ok
+[1603976477.658][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976478.174][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976478.174][INFO]: Waiting for pending navigations...
+[1603976478.175][INFO]: Done waiting for pending navigations. Status: ok
+[1603976478.176][INFO]: Waiting for pending navigations...
+[1603976478.176][INFO]: Done waiting for pending navigations. Status: ok
+[1603976478.176][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976478.691][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976478.692][INFO]: Waiting for pending navigations...
+[1603976478.692][INFO]: Done waiting for pending navigations. Status: ok
+[1603976478.693][INFO]: Waiting for pending navigations...
+[1603976478.693][INFO]: Done waiting for pending navigations. Status: ok
+[1603976478.693][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976479.210][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976479.210][INFO]: Waiting for pending navigations...
+[1603976479.210][INFO]: Done waiting for pending navigations. Status: ok
+[1603976479.211][INFO]: Waiting for pending navigations...
+[1603976479.212][INFO]: Done waiting for pending navigations. Status: ok
+[1603976479.212][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976479.726][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976479.726][INFO]: Waiting for pending navigations...
+[1603976479.749][INFO]: Done waiting for pending navigations. Status: ok
+[1603976479.844][INFO]: Waiting for pending navigations...
+[1603976479.845][INFO]: Done waiting for pending navigations. Status: ok
+[1603976479.845][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976480.361][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976480.363][INFO]: Waiting for pending navigations...
+[1603976480.365][INFO]: Done waiting for pending navigations. Status: ok
+[1603976480.366][INFO]: Waiting for pending navigations...
+[1603976480.366][INFO]: Done waiting for pending navigations. Status: ok
+[1603976480.366][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976480.882][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976480.882][INFO]: Waiting for pending navigations...
+[1603976480.882][INFO]: Done waiting for pending navigations. Status: ok
+[1603976480.883][INFO]: Waiting for pending navigations...
+[1603976480.883][INFO]: Done waiting for pending navigations. Status: ok
+[1603976480.884][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976481.399][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976481.399][INFO]: Waiting for pending navigations...
+[1603976481.399][INFO]: Done waiting for pending navigations. Status: ok
+[1603976481.400][INFO]: Waiting for pending navigations...
+[1603976481.401][INFO]: Done waiting for pending navigations. Status: ok
+[1603976481.401][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976481.916][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976481.916][INFO]: Waiting for pending navigations...
+[1603976481.917][INFO]: Done waiting for pending navigations. Status: ok
+[1603976481.918][INFO]: Waiting for pending navigations...
+[1603976481.918][INFO]: Done waiting for pending navigations. Status: ok
+[1603976481.918][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976482.435][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976482.435][INFO]: Waiting for pending navigations...
+[1603976482.436][INFO]: Done waiting for pending navigations. Status: ok
+[1603976482.437][INFO]: Waiting for pending navigations...
+[1603976482.438][INFO]: Done waiting for pending navigations. Status: ok
+[1603976482.438][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976482.954][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976482.954][INFO]: Waiting for pending navigations...
+[1603976482.955][INFO]: Done waiting for pending navigations. Status: ok
+[1603976482.956][INFO]: Waiting for pending navigations...
+[1603976482.956][INFO]: Done waiting for pending navigations. Status: ok
+[1603976482.956][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976483.473][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976483.473][INFO]: Waiting for pending navigations...
+[1603976483.474][INFO]: Done waiting for pending navigations. Status: ok
+[1603976483.475][INFO]: Waiting for pending navigations...
+[1603976483.475][INFO]: Done waiting for pending navigations. Status: ok
+[1603976483.475][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976483.990][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1603976483.990][INFO]: Waiting for pending navigations...
+[1603976483.991][INFO]: Done waiting for pending navigations. Status: ok
+[1603976483.992][INFO]: Waiting for pending navigations...
+[1603976483.992][INFO]: Done waiting for pending navigations. Status: ok
+[1603976483.992][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE ExecuteScript "complete"
+[1603976503.018][INFO]: [0408f60ff4411856f7b09ca45a98bf89] COMMAND Quit {
+
+}
+[1603976503.069][INFO]: [0408f60ff4411856f7b09ca45a98bf89] RESPONSE Quit
