@@ -1,11 +1,11 @@
 package citrus;
 
+import citrus.pages.ComparePage;
 import citrus.pages.HomePage;
 import citrus.pages.ProductListPage;
 import citrus.pages.ProductPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,6 +15,7 @@ public class CitrusBasketTest {
     HomePage homePage;
     ProductListPage productListPage;
     ProductPage productPage;
+    ComparePage comparePage;
     String productName = "Apple iPhone 11 128Gb Black";
     String productName1 = "Apple iPhone 11 128Gb Green (MWM62)";
     String productName2 = "Apple iPhone 11 64Gb Red (MWLV2)";
@@ -27,6 +28,7 @@ public class CitrusBasketTest {
         homePage = new HomePage();
         productListPage = new ProductListPage();
         productPage = new ProductPage();
+        comparePage = new ComparePage();
     }
 
     @Test
@@ -96,9 +98,39 @@ public class CitrusBasketTest {
 //        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice1 + productPrice2));
 //        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice2));
         //need chaeck total price
-
-
     }
+    @Test
+    public void add2ProductsToBasketFromComparison(){
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .searchQuery2();
+        productListPage
+                .waitForPageLoad()
+                .closePopUp2();
+
+        productListPage.findeProductCardByName1(productName1);
+        String productName1 = productListPage.getProductName1();
+        productListPage.clickOnAddToCompare1();
+        String productPrice1 = productListPage.getProductPrice1();
+
+        productListPage.findeProductCardByName2(productName2);
+        String productName2 = productListPage.getProductName2();
+        productListPage.clickOnAddToCompare2();
+        String productPrice2 = productListPage.getProductPrice2();
+        productListPage.clickOnCompareButton();
+
+        comparePage.clickAddToBasketButtonFirstProduct();
+        comparePage.closeBasketButton1();
+
+
+        comparePage.clickAddToBasketButtonSecondProduct();
+        comparePage.closeBasketButton1();
+
+        comparePage.clickOnBasketInHeader()
+                .waitForPageLoad();
+//need check total price
+    }
+
 
 
 }

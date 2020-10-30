@@ -114,4 +114,18 @@ public class ProductListPage extends BasePage {
         $$x("//button[@aria-label='Close'][@class='el-dialog__headerbtn']").get(1).click();
         return this;
     }
+
+    public ProductListPage clickOnAddToCompare1() {
+        $x("//div[@class='product-card product-card--mini'][1]//i[@class='icon-comparison2 el-tooltip item']").click();
+        return this;
+    }
+    public ProductListPage clickOnAddToCompare2() {
+        $x("//div[@class='product-card product-card--mini'][2]//i[@class='icon-comparison2 el-tooltip item']").click();
+        return this;
+    }
+
+    public ProductListPage clickOnCompareButton() {
+        $x("//div[@class='user-actions__compare tips-parent']").click();
+        return this;
+    }
 }

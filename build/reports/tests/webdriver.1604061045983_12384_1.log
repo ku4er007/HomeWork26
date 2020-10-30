@@ -1,0 +1,196 @@
+[1604061046.157][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 9751
+[1604061046.158][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1604061046.433][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1604061045430_12384_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1604061045430_12384_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1604061046.435][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/Users/kostiantyndoroshenko/Downloads/ДЗ Автоматизация/HomeWork26/build/downloads/1604061045430_12384_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1604061046.435][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1604061046.435][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.AV3qjF data:,
+[1604061047.883][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1604061047.890][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1604061047.902][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.111",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "/var/folders/wy/_106bf7d06q9jc6p1xz5wbbm0000gn/T/.com.google.Chrome.AV3qjF"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:55372"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "4acf488b3421868e88974e7fc6ee7af5"
+}
+[1604061047.956][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1604061047.957][INFO]: Waiting for pending navigations...
+[1604061047.957][INFO]: Done waiting for pending navigations. Status: ok
+[1604061048.061][INFO]: Waiting for pending navigations...
+[1604061048.062][INFO]: Done waiting for pending navigations. Status: ok
+[1604061048.062][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 1462,
+   "y": 1
+}
+[1604061048.069][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND Navigate {
+   "url": "https://www.citrus.ua/"
+}
+[1604061048.069][INFO]: Waiting for pending navigations...
+[1604061048.070][INFO]: Done waiting for pending navigations. Status: ok
+[1604061048.253][INFO]: Waiting for pending navigations...
+[1604061049.776][INFO]: Done waiting for pending navigations. Status: ok
+[1604061049.776][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE Navigate
+[1604061049.881][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1604061049.881][INFO]: Waiting for pending navigations...
+[1604061049.882][INFO]: Done waiting for pending navigations. Status: ok
+[1604061049.884][INFO]: Waiting for pending navigations...
+[1604061049.885][INFO]: Done waiting for pending navigations. Status: ok
+[1604061049.885][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE ExecuteScript "interactive"
+[1604061050.392][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1604061050.392][INFO]: Waiting for pending navigations...
+[1604061050.393][INFO]: Done waiting for pending navigations. Status: ok
+[1604061050.396][INFO]: Waiting for pending navigations...
+[1604061050.397][INFO]: Done waiting for pending navigations. Status: ok
+[1604061050.397][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE ExecuteScript "interactive"
+[1604061050.905][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1604061050.906][INFO]: Waiting for pending navigations...
+[1604061059.899][INFO]: Done waiting for pending navigations. Status: ok
+[1604061059.900][INFO]: Waiting for pending navigations...
+[1604061059.900][INFO]: Done waiting for pending navigations. Status: ok
+[1604061059.900][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE ExecuteScript "interactive"
+[1604061059.925][INFO]: [4acf488b3421868e88974e7fc6ee7af5] COMMAND Quit {
+
+}
+[1604061059.975][INFO]: [4acf488b3421868e88974e7fc6ee7af5] RESPONSE Quit
