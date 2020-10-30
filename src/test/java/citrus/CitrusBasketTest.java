@@ -15,9 +15,9 @@ public class CitrusBasketTest {
     HomePage homePage;
     ProductListPage productListPage;
     ProductPage productPage;
-
     String productName = "Apple iPhone 11 128Gb Black";
-
+    String productName1 = "Apple iPhone 11 128Gb Green (MWM62)";
+    String productName2 = "Apple iPhone 11 64Gb Red (MWLV2)";
 
 
     @BeforeClass
@@ -65,5 +65,40 @@ public class CitrusBasketTest {
         productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice));
 
     }
+
+    @Test
+    public void Add2ProductsToBasket() {
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .searchQuery2();
+        productListPage
+                .waitForPageLoad()
+                .closePopUp2();
+
+        productListPage.findeProductCardByName1(productName1);
+        String productName1 = productListPage.getProductName1();
+        productListPage.clickOnAddToBasket1();
+        String productPrice1 = productListPage.getProductPrice1();
+        productListPage.closeBasketButton();
+
+        productListPage.findeProductCardByName2(productName2);
+        String productName2 = productListPage.getProductName2();
+        productListPage.clickOnAddToBasket2();
+        String productPrice2 = productListPage.getProductPrice2();
+
+
+
+        productListPage.getBasket().shouldBe(Condition.visible);
+        productListPage.getProduct2NamesFromBasket().shouldHaveSize(2);
+        productListPage.getProduct2NamesFromBasket().get(0).shouldHave(Condition.text(productName1));
+        productListPage.getProduct2NamesFromBasket().get(1).shouldHave(Condition.text(productName2));
+
+//        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice1 + productPrice2));
+//        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice2));
+        //need chaeck total price
+
+
+    }
+
 
 }

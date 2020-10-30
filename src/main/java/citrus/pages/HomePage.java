@@ -36,4 +36,9 @@ public class HomePage extends BasePage {
         $x("//input[@id='search-input']").val("Apple iPhone 11").sendKeys(Keys.ENTER);
         return this;
     }
+
+    public HomePage searchQuery2() {
+        $x("//input[@id='search-input']").val("Apple iPhone").sendKeys(Keys.ENTER);
+        return this;
+    }
 }
