@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class ProductPage extends BasePage {
     SelenideElement productPrice = $x("//div[@class='price']/span/span");
-    SelenideElement byButton = $x("//button[@class='btn orange full'][@type='button']");
+    SelenideElement byButton = $x("//div[@class='buy-block showcase__buy-block']//button[@class='btn orange full']");
     SelenideElement basketVidget = $x("//div[@class='el-dialog el-dialog--medium']");
 
     public String getProductPrice() {

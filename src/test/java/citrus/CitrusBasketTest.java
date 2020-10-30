@@ -15,7 +15,7 @@ public class CitrusBasketTest {
     ProductListPage productListPage;
     ProductPage productPage;
 
-    String productName = "Apple iPhone 11 128Gb Black (MWM02)";
+    String productName = "Apple iPhone 11 128Gb Black";
 
     @BeforeClass
     public void startUp() {
@@ -39,8 +39,7 @@ public class CitrusBasketTest {
         productPage.getBasket().shouldBe(Condition.visible);
         productPage.getProductNamesFromBasket().shouldHaveSize(1);
         productPage.getProductNamesFromBasket().get(0).shouldHave(Condition.text(productName));
-        productPage.getBasketTotalPrice().shouldHave(Condition.text(productName));
-
+        productPage.getBasketTotalPrice().shouldHave(Condition.text(productPrice));
 
     }
 }

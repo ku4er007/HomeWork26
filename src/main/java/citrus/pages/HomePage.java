@@ -5,17 +5,20 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class HomePage extends BasePage{
+public class HomePage extends BasePage {
     SelenideElement popUpCloseButton = $(".el-dialog__close");
+
     public HomePage hoverMenuLine(String menuText) {
-        $x("//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'" + menuText + "')]").hover();
+//        $x("//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/']/span[contains(text(),'" + menuText + "')]").hover();
+        $x("//div[@class='menu--desktop__drop-list show']//a[@href='/smartfony/']/span[contains(text(),'" + menuText + "')]").hover();
         return this;
 
     }
 
     public HomePage clickLinkInMenu(String linkText) {
-         $x("//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/brand-apple/']/span[contains(text(),'" + linkText + "')]").click();
-    return this;
+//        $x("//div[@class='menu--desktop__drop-list']//a[@href='/smartfony/brand-apple/']/span[contains(text(),'" + linkText + "')]").click();
+        $x("//div[@class='menu-aim__item-submenu']//a[@href='/smartfony/brand-apple/']/span[contains(text(),'" + linkText + "')]").click();
+        return this;
     }
 
     public HomePage waitForPageLoad() {
@@ -24,7 +27,7 @@ public class HomePage extends BasePage{
     }
 
     public HomePage closePopUp() {
-        if(popUpCloseButton.isDisplayed()){
+        if (popUpCloseButton.isDisplayed()) {
             popUpCloseButton.click();
         }
         return this;
