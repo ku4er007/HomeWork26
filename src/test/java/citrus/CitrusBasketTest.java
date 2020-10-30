@@ -128,6 +128,10 @@ public class CitrusBasketTest {
 
         comparePage.clickOnBasketInHeader()
                 .waitForPageLoad();
+        comparePage.getBasket().shouldBe(Condition.visible);
+        comparePage.getProductNames2FromBasket().shouldHaveSize(2);
+        comparePage.getProductNames2FromBasket().get(0).shouldHave(Condition.text(productName1));
+        comparePage.getProductNames2FromBasket().get(1).shouldHave(Condition.text(productName2));
 //need check total price
     }
 
