@@ -5,6 +5,7 @@ import citrus.pages.ProductListPage;
 import citrus.pages.ProductPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,8 @@ public class CitrusBasketTest {
     ProductPage productPage;
 
     String productName = "Apple iPhone 11 128Gb Black";
+
+
 
     @BeforeClass
     public void startUp() {
@@ -40,6 +43,27 @@ public class CitrusBasketTest {
         productPage.getProductNamesFromBasket().shouldHaveSize(1);
         productPage.getProductNamesFromBasket().get(0).shouldHave(Condition.text(productName));
         productPage.getBasketTotalPrice().shouldHave(Condition.text(productPrice));
+    }
+
+    @Test
+    public void addProductToBasketUsingSearch() {
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .searchQuery();
+
+        productListPage.clickShowMoreButton()
+                .waitForPageLoad()
+                .closePopUp2();
+        productListPage.findeProductCardByName(productName);
+        String productName = productListPage.getProductName();
+        productListPage.clickOnAddToBasket();
+        String productPrice = productListPage.getProductPrice();
+
+        productListPage.getBasket().shouldBe(Condition.visible);
+        productListPage.getProduct2NamesFromBasket().shouldHaveSize(1);
+        productListPage.getProduct2NamesFromBasket().get(0).shouldHave(Condition.text(productName));
+        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice));
 
     }
+
 }
