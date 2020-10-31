@@ -19,8 +19,9 @@ public class CitrusBasketTest {
     String productName = "Apple iPhone 11 128Gb Black";
     String productName1 = "Apple iPhone 11 128Gb Green (MWM62)";
     String productName2 = "Apple iPhone 11 64Gb Red (MWLV2)";
-    String firstProductName = "Ноутбук Acer Swift 1 SF114-32-P8DP Obsidian Black  ...";
+    String firstProductName = "Ноутбук Acer Swift 1 SF114-32-P8DP Obsidian Black (NX.H1YEU.025)";
     String secondProductName = "Ноутбук Acer Swift 3 SF314-56 Blue (NX.H4EEU.010)";
+    String thirdProductName = "Apple iPhone Xr 64Gb Black (MRY42)";
 
 
     @BeforeClass
@@ -204,15 +205,35 @@ public class CitrusBasketTest {
 
         productListPage.find2ProductCardByName(secondProductName);
         String second2ProductName = productListPage.getSecondProductName();
-        productListPage.clickOnAddToCompare2Product();
-        productListPage.clickOnAddToCompare2Product();
-
-
         String second2ProductPrice = productListPage.getSecondProductPrice();
+        productListPage.clickOnAddToCompare2Product();
+        productListPage.clickOnAddToCompare2Product();
         productListPage.waitForPageLoad();
 
         productListPage.clickOnCompareButtonInHeader();
         comparePage.waitForPageLoad();
+        comparePage.checkProductInCompare().shouldHaveSize(4);
+//        comparePage.getProductNameFromCompareList().get(2).shouldHave(Condition.text(first1ProductName));
+//        comparePage.getProductNameFromCompareList().get(0).shouldHave(Condition.text(second2ProductName));
+        comparePage.getProductPrice().get(2).shouldHave(Condition.text(first1ProductPrice));
+        comparePage.getProductPrice().get(0).shouldHave(Condition.text(second2ProductPrice));
+
+        comparePage.clickOnAddNewProductInCompare();
+        comparePage.findThirdProductNameElementByName(thirdProductName);
+        String thirdProductName = comparePage.getThirdProductName();
+        String thirdProductPrice = comparePage.getThirdProductPrice();
+        comparePage.clickOnChechBox();
+        comparePage.clickOnAddButton();
+
+        comparePage.checkProductInCompare().shouldHaveSize(6);
+        comparePage.getProductPrice().get(2).shouldHave(Condition.text(first1ProductPrice));
+        comparePage.getProductPrice().get(0).shouldHave(Condition.text(second2ProductPrice));
+        comparePage.getProductPrice().get(4).shouldHave(Condition.text(thirdProductPrice));
+
+
+
+
+
 
 
 

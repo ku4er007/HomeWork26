@@ -217,6 +217,7 @@ public class ProductListPage extends BasePage {
     }
 
 
+
 //    public ProductListPage clickOnPageSamsungTitle() {
 //        $x("//h1[contains(text(),'Смартфоны Samsung')]").click();
 //        return this;
