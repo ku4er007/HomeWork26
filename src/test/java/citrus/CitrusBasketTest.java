@@ -135,6 +135,21 @@ public class CitrusBasketTest {
 //need check total price
     }
 
+    @Test
+    public void UsePriceFilter(){
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .hoverMenuLine("Смартфоны")
+                .clickLinkInMenuSamsung("Samsung");
+        productListPage.waitForPageLoad();
+        productListPage.addMinimumPrice();
+        productListPage.waitForPageLoad();
+        productListPage.addMaximumPrice();
+        String samsungTitle = productListPage.getProductTitle();
+        productListPage.waitForPageLoad();
+
+    }
+
 
 
 }

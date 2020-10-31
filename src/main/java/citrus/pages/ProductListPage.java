@@ -15,6 +15,9 @@ public class ProductListPage extends BasePage {
     SelenideElement productPrice1 = $x("//div[@class='product-card product-card--mini'][1]//span[@class='price-number']");
     SelenideElement productPrice3 = $x("//div[@class='product-card product-card--mini'][2]//span[@class='price-number']");
 
+    SelenideElement productTitle = $x("//li[@class='item']//span[contains(text(),'samsung')]");
+    SelenideElement productName3 = $x("//div[@class='product-card__name']");
+
 
     SelenideElement basketVidget = $x("//div[@class='el-dialog el-dialog--medium']");
     SelenideElement popUpCloseButton = $x("//i[@class='el-dialog__close el-icon el-icon-close']");
@@ -78,9 +81,11 @@ public class ProductListPage extends BasePage {
     public String getProductPrice() {
         return productPrice2.getText();
     }
+
     public String getProductPrice1() {
         return productPrice1.getText();
     }
+
     public String getProductPrice2() {
         return productPrice3.getText();
     }
@@ -119,6 +124,7 @@ public class ProductListPage extends BasePage {
         $x("//div[@class='product-card product-card--mini'][1]//i[@class='icon-comparison2 el-tooltip item']").click();
         return this;
     }
+
     public ProductListPage clickOnAddToCompare2() {
         $x("//div[@class='product-card product-card--mini'][2]//i[@class='icon-comparison2 el-tooltip item']").click();
         return this;
@@ -128,4 +134,27 @@ public class ProductListPage extends BasePage {
         $x("//div[@class='user-actions__compare tips-parent']").click();
         return this;
     }
+
+    public ProductListPage addMinimumPrice() {
+        $$x("//input[@class='el-input__inner']").get(0).val("7000");
+        return this;
+    }
+    public ProductListPage addMaximumPrice() {
+        $$x("//input[@class='el-input__inner']").get(1).val("15000");
+        return this;
+    }
+
+    public String getProductTitle() {
+        return productTitle.getText();
+    }
+
+    public String getAllProdactName() {
+        return productName3.getText();
+    }
+
+
+//    public ProductListPage clickOnPageSamsungTitle() {
+//        $x("//h1[contains(text(),'Смартфоны Samsung')]").click();
+//        return this;
+//    }
 }
