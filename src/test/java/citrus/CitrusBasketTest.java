@@ -19,6 +19,8 @@ public class CitrusBasketTest {
     String productName = "Apple iPhone 11 128Gb Black";
     String productName1 = "Apple iPhone 11 128Gb Green (MWM62)";
     String productName2 = "Apple iPhone 11 64Gb Red (MWLV2)";
+    String firstProductName = "Ноутбук Acer Swift 1 SF114-32-P8DP Obsidian Black  ...";
+    String secondProductName = "Ноутбук Acer Swift 3 SF314-56 Blue (NX.H4EEU.010)";
 
 
     @BeforeClass
@@ -89,7 +91,6 @@ public class CitrusBasketTest {
         String productPrice2 = productListPage.getProductPrice2();
 
 
-
         productListPage.getBasket().shouldBe(Condition.visible);
         productListPage.getProduct2NamesFromBasket().shouldHaveSize(2);
         productListPage.getProduct2NamesFromBasket().get(0).shouldHave(Condition.text(productName1));
@@ -99,8 +100,9 @@ public class CitrusBasketTest {
 //        productListPage.getBasketTotalPrice2().shouldHave(Condition.text(productPrice2));
         //need chaeck total price
     }
+
     @Test
-    public void add2ProductsToBasketFromComparison(){
+    public void add2ProductsToBasketFromComparison() {
         homePage.waitForPageLoad()
                 .closePopUp()
                 .searchQuery2();
@@ -132,11 +134,11 @@ public class CitrusBasketTest {
         comparePage.getProductNames2FromBasket().shouldHaveSize(2);
         comparePage.getProductNames2FromBasket().get(0).shouldHave(Condition.text(productName1));
         comparePage.getProductNames2FromBasket().get(1).shouldHave(Condition.text(productName2));
-//need check total price
+        //- basket total is correct
     }
 
     @Test
-    public void UsePriceFilter(){
+    public void UsePriceFilter() {
         homePage.waitForPageLoad()
                 .closePopUp()
                 .hoverMenuLine("Смартфоны")
@@ -147,9 +149,77 @@ public class CitrusBasketTest {
         productListPage.addMaximumPrice();
         String samsungTitle = productListPage.getProductTitle();
         productListPage.waitForPageLoad();
+        //3) Verify
+        //- all products contain 'samsung' in name
+        //- all product prices are inside of filer range
 
     }
 
+    @Test
+    public void useMemorySizeFilter() {
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .hoverMenuLine("Смартфоны")
+                .clickOnLinkInMenuXiaomi("Xiaomi");
+        productListPage.waitForPageLoad();
+        productListPage.clickOn4GbRam();
+        productListPage.waitForPageLoad();
+        productListPage.clickOn6GbRam();
+        productListPage.waitForPageLoad();
+        //3) Verify
+        //- all products contain 'Xiaomi' in name
+        //- all products on the page contain memory 4 or 6gb
+
+    }
+
+    @Test
+    public void useBodyMaterialFilter() {
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .hoverMenuLine("Смартфоны")
+                .clickOnLinkInMenuOpnePlus("OnePlus");
+        productListPage.waitForPageLoad();
+        productListPage.clickOnMetalMaterialFilter();
+        //3) Verify
+        //- all products contain 'Google Pixel' in name
+        //- all products on the page contain Metal as body material
+
+    }
+
+    @Test
+    public void compare2Products() {
+        homePage.waitForPageLoad()
+                .closePopUp()
+                .hoverMenuLineNetbook("Ноутбуки, планшеты, МФУ")
+                .clickOnAcer("Acer");
+        productListPage.waitForPageLoad();
+        productListPage.finde1ProductCardByName(firstProductName);
+        String first1ProductName = productListPage.getFirstProductName();
+        String first1ProductPrice = productListPage.getFirst1ProductPrice();
+        productListPage.clickOnAddToCompare1Product();
+        productListPage.clickOnAddToCompare1Product();
+
+        productListPage.waitForPageLoad();
+
+
+        productListPage.find2ProductCardByName(secondProductName);
+        String second2ProductName = productListPage.getSecondProductName();
+        productListPage.clickOnAddToCompare2Product();
+        productListPage.clickOnAddToCompare2Product();
+
+
+        String second2ProductPrice = productListPage.getSecondProductPrice();
+        productListPage.waitForPageLoad();
+
+        productListPage.clickOnCompareButtonInHeader();
+        comparePage.waitForPageLoad();
+
+
+
+
+
+
+    }
 
 
 }

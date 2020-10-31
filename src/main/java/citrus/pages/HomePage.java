@@ -13,6 +13,11 @@ public class HomePage extends BasePage {
         return this;
     }
 
+    public HomePage hoverMenuLineNetbook(String menuTextNetbook) {
+        $x("//div[@class='menu--desktop__drop-list show']//a[@href='/planshety-noutbuki-i-kompyutery/']/span[contains(text(),'" + menuTextNetbook + "')]").hover();
+        return this;
+    }
+
     public HomePage hoverMenuLineSamsung(String menuTextSamsung) {
         $x("//div[@class='menu--desktop__drop-list show']//a[@href='/smartfony/brand-samsung/']/span[contains(text(),'" + menuTextSamsung + "')]");
         return this;
@@ -24,7 +29,22 @@ public class HomePage extends BasePage {
     }
 
     public HomePage clickLinkInMenuSamsung(String linkText) {
-        $x("//div[@class='menu-aim__item-submenu']//a[@href='/smartfony/brand-samsung/']/span[contains(text(),'"+linkText+"')]").click();
+        $x("//div[@class='menu-aim__item-submenu']//a[@href='/smartfony/brand-samsung/']/span[contains(text(),'" + linkText + "')]").click();
+        return this;
+    }
+
+    public HomePage clickOnLinkInMenuXiaomi(String linkText1) {
+        $x("//div[@class='menu-aim__item-submenu']//a[@href='/smartfony/brand-xiaomi/']/span[contains(text(),'" + linkText1 + "')]").click();
+        return this;
+    }
+
+    public HomePage clickOnLinkInMenuOpnePlus(String onePlus) {
+        $x("//a[@href='/smartfony/brand-oneplus/']//span[contains(text(),'" + onePlus + "')]").click();
+        return this;
+    }
+
+    public HomePage clickOnAcer(String Acer) {
+        $$x("//div[@class='menu-aim__item-submenu']//a[@href='/noutbuki-i-ultrabuki/brand-acer/']/span[contains(text(),'" + Acer + "')]").get(0).click();
         return this;
     }
 
@@ -49,6 +69,5 @@ public class HomePage extends BasePage {
         $x("//input[@id='search-input']").val("Apple iPhone").sendKeys(Keys.ENTER);
         return this;
     }
-
 
 }
