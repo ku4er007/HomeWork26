@@ -79,7 +79,6 @@ public class CitrusBasketTest {
         productListPage
                 .waitForPageLoad()
                 .closePopUp2();
-
         productListPage.findeProductCardByName1(productName1);
         String productName1 = productListPage.getProductName1();
         productListPage.clickOnAddToBasket1();
@@ -90,7 +89,6 @@ public class CitrusBasketTest {
         String productName2 = productListPage.getProductName2();
         productListPage.clickOnAddToBasket2();
         String productPrice2 = productListPage.getProductPrice2();
-
 
         productListPage.getBasket().shouldBe(Condition.visible);
         productListPage.getProduct2NamesFromBasket().shouldHaveSize(2);
@@ -110,7 +108,6 @@ public class CitrusBasketTest {
         productListPage
                 .waitForPageLoad()
                 .closePopUp2();
-
         productListPage.findeProductCardByName1(productName1);
         String productName1 = productListPage.getProductName1();
         productListPage.clickOnAddToCompare1();
@@ -121,11 +118,8 @@ public class CitrusBasketTest {
         productListPage.clickOnAddToCompare2();
         String productPrice2 = productListPage.getProductPrice2();
         productListPage.clickOnCompareButton();
-
         comparePage.clickAddToBasketButtonFirstProduct();
         comparePage.closeBasketButton1();
-
-
         comparePage.clickAddToBasketButtonSecondProduct();
         comparePage.closeBasketButton1();
 
@@ -199,9 +193,7 @@ public class CitrusBasketTest {
         String first1ProductPrice = productListPage.getFirst1ProductPrice();
         productListPage.clickOnAddToCompare1Product();
         productListPage.clickOnAddToCompare1Product();
-
         productListPage.waitForPageLoad();
-
 
         productListPage.find2ProductCardByName(secondProductName);
         String second2ProductName = productListPage.getSecondProductName();
@@ -213,34 +205,19 @@ public class CitrusBasketTest {
         productListPage.clickOnCompareButtonInHeader();
         comparePage.waitForPageLoad();
         comparePage.checkProductInCompare().shouldHaveSize(4);
-//        comparePage.getProductNameFromCompareList().get(2).shouldHave(Condition.text(first1ProductName));
-//        comparePage.getProductNameFromCompareList().get(0).shouldHave(Condition.text(second2ProductName));
+        comparePage.getProductNameFromCompareList().get(2).shouldHave(Condition.text(first1ProductName));
+        comparePage.getProductNameFromCompareList().get(0).shouldHave(Condition.text(second2ProductName));
         comparePage.getProductPrice().get(2).shouldHave(Condition.text(first1ProductPrice));
         comparePage.getProductPrice().get(0).shouldHave(Condition.text(second2ProductPrice));
-
         comparePage.clickOnAddNewProductInCompare();
         comparePage.findThirdProductNameElementByName(thirdProductName);
         String thirdProductName = comparePage.getThirdProductName();
         String thirdProductPrice = comparePage.getThirdProductPrice();
         comparePage.clickOnChechBox();
         comparePage.clickOnAddButton();
-
         comparePage.checkProductInCompare().shouldHaveSize(6);
         comparePage.getProductPrice().get(2).shouldHave(Condition.text(first1ProductPrice));
         comparePage.getProductPrice().get(0).shouldHave(Condition.text(second2ProductPrice));
         comparePage.getProductPrice().get(4).shouldHave(Condition.text(thirdProductPrice));
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 }
